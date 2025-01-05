@@ -2,10 +2,10 @@ class Solution {
 public:
     bool hasAlternatingBits(int n) {
        int temp = n;
-       int bitCount = 0;
+       //int bitCount = 0;
        while(temp!=0){
             int bit1 = temp & 1;
-            bitCount++;
+            //bitCount++;
             temp >>=1;
             int bit2 = temp &1;
             int test = bit1 ^ bit2;
