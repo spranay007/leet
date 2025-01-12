@@ -7,7 +7,8 @@ public:
     set<int> result;
 
     for (int num : set1){
-        if (set2.count(num) || set3.count(num)) {
+        if (set2.count(num) || set3.count(num))    //count function for set returns 1 if the number is present
+            {
                 result.insert(num); // If the number is in at least two arrays
             }
         }
