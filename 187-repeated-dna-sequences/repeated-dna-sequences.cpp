@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<string> findRepeatedDnaSequences(string s) {
+        //basically a sliding window problem
         //using an unordered map
         unordered_map<string, int> seqCount;
         int possibleStarts = s.size()-9;
